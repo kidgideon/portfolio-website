@@ -18,7 +18,7 @@ const Home = () => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
+          entry.target.classList.add("visible")
           observer.unobserve(entry.target);
         }
       });
@@ -44,7 +44,7 @@ const Home = () => {
         </div>
 
         <div className="section-two">
-          <div onClick={toggleTheme} className="theme-toggle">
+          <div  onClick={toggleTheme} className="theme-toggle">
             {theme === "dark" ? (
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" strokeWidth="1.5"
@@ -95,7 +95,7 @@ const Home = () => {
           <h1>Kofi <span style={{ color: "#62addc" }}>Gideon</span></h1>
           <div className="intro-panel">
             <h3>
-              full-stack web developer who builds fast, scalable, and user-focused digital experiences...
+            I’m Gideon, a full-stack web developer focused on building fast, clean, and user-friendly web apps. I work with tools like React and Node.js to turn ideas into working products. Always learning, always building. Let’s create something awesome.
             </h3>
           </div>
         </div>
