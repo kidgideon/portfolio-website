@@ -34,11 +34,12 @@ const Home = () => {
             <span>Gideon</span><span style={{color:"#62addc"}}>.Dev</span>
         </div>
 
-        <div className="section-two">
-            <button>about</button>
-            <button>skils</button>
-            <button>hire me</button>
-        </div>
+     <div className="section-two">
+        <a href="mailto:kofigideon065@gmail.com">
+        <button>Contact</button>
+        </a>
+</div>
+
     </div>
 
 <lord-icon
@@ -60,17 +61,29 @@ const Home = () => {
   colors="primary:#62addc,secondary:#62addc">
 </lord-icon>
 
-
      <div className="intro-layout fade-in-up">
           <div className="into-img">
  <img src={boy} alt="" />
-   <div className="socials">
-<i class="fa-brands fa-github"></i>
-<i class="fa-brands fa-linkedin"></i>
-<i class="fa-brands fa-square-whatsapp"></i>
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-solid fa-download"></i>
-   </div>
+  <div className="socials">
+  <a href="https://github.com/kidgideon" target="_blank" rel="noopener noreferrer">
+    <i className="fa-brands fa-github"></i>
+  </a>
+  <a href="https://linkedin.com/in/
+gideon-kofi-08158b2a9
+" target="_blank" rel="noopener noreferrer">
+    <i className="fa-brands fa-linkedin"></i>
+  </a>
+  <a href="https://wa.me/07046578294" target="_blank" rel="noopener noreferrer">
+    <i className="fa-brands fa-square-whatsapp"></i>
+  </a>
+  <a href="https://web.facebook.com/ebedaowei.gideon.kofi" target="_blank" rel="noopener noreferrer">
+    <i className="fa-brands fa-facebook"></i>
+  </a>
+  <a href="./images/resume.pdf" download>
+    <i className="fa-solid fa-download"></i>
+  </a>
+</div>
+
           </div>
         <div className="intro fade-in-up">
             <h1>Kofi <span style={{color: "#62addc"}}>Gideon</span></h1>

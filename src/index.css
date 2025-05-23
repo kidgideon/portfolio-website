@@ -17,17 +17,17 @@ body {
 .prop1 {
   position: fixed;
   top: 20%;
-  left: 10%;
-  width: 150px;
-  height: 150px;
+  left: 3%;
+  width: 110px;
+  height: 110px;
 }
 
 .prop2 {
   position: fixed;
   right: 5%;
-  bottom: 20%;
-   width: 150px;
-  height: 150px;
+  bottom: 5%;
+   width: 110px;
+  height: 110px;
 }
 
 .navbar {
@@ -115,7 +115,7 @@ body {
 .abs {
   position: absolute;
   top: -12%;
-  left: 91%;
+  left: 95%;
   height: 150px;
   width: 150px;
   z-index: 50px;
@@ -235,7 +235,7 @@ footer {
 
   .abs {
     top: 10px;
-    left:80%;
+    left: 85%;
     height: 50px;
     width: 50px;
   }
