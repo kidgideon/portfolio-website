@@ -6,13 +6,17 @@
   flex-direction: column;
   font-family: sans-serif;
   padding-top: 60px;
-  background-color: black;
 }
 
 body {
-  background-color: black;
   font-family: sans-serif;
+  background: black;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  transition: ease-in 0.5s;
 }
+
 
 .prop1 {
   position: fixed;
@@ -38,11 +42,12 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: black;
   height: 50px;
   color: white;
   align-items: center;
   z-index: 1000;
+  background-color: black;
+   transition: ease-in 0.5s;
 }
 
 .navbar button {
@@ -77,6 +82,14 @@ body {
   align-items: center;
   gap: 10px;
 }
+.section-two svg {
+  color: #62addc;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* Add this to your CSS temporarily */
 
 .intro-layout {
   width: 50%;
@@ -121,12 +134,11 @@ body {
   z-index: 50px;
 }
 
-.intro-panel p{
-  width: 200px;
+.intro-panel h3{
+   width: 100%;
   padding: 10px;
   line-height: 1;
   text-align: center;
-  border: 2px solid #62addc;
   border-radius: 10px;
 }
 
@@ -140,7 +152,8 @@ body {
 .socials i {
   font-size: 40px;
   color: #62addc;
-  background-color: black;
+  background-color: transparent;
+  border-radius: 20px;
 }
 
 .skills {
@@ -156,7 +169,8 @@ body {
 .skills i {
   font-size: 80px;
   color: #62addc;
-  background-color: black;
+  background-color: transparent;
+  border-radius: 80px;
 }
 
 .skill{
@@ -180,6 +194,49 @@ footer {
   transform: translateY(30px);
   animation: fadeInUp 1s ease-out forwards;
 }
+
+/* ===== THEME SUPPORT ===== */
+body[data-theme="light"] {
+  background-color: #f0f0f0;
+  color: #111;
+}
+
+body[data-theme="light"] .navbar {
+  background-color: #f0f0f0;
+  color: #111;
+}
+
+body[data-theme="light"] .intro,
+body[data-theme="light"] .ski,
+body[data-theme="light"] .skills {
+  color: #000;
+}
+
+body[data-theme="light"] .navbar button {
+  background-color: #2b6e9e;
+  color: white;
+}
+
+body[data-theme="light"] .skills i,
+body[data-theme="light"] .socials i {
+  color: #2b6e9e;
+}
+
+body[data-theme="dark"] {
+  background-color: #000;
+  color: white;
+}
+
+body[data-theme="dark"] .navbar {
+  background-color: #000;
+  color: white;
+}
+
+body[data-theme="dark"] .skills i,
+body[data-theme="dark"] .socials i {
+  color: #62addc;
+}
+
 
 @keyframes fadeInUp {
   to {
